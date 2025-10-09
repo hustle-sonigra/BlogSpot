@@ -1,0 +1,102 @@
+/* General body */
+body {
+  margin: 0;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(135deg, #36d1dc, #5b86e5);
+  color: #fff;
+  min-height: 100vh;
+}
+
+/* Page title */
+h1 {
+  text-align: center;
+  font-size: 2.3rem;
+  margin-bottom: 10px;
+}
+
+p {
+  text-align: center;
+  font-size: 1.1rem;
+  margin-bottom: 20px;
+}
+
+/* Create post form */
+form {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+form input[type="submit"] {
+  background: #fff;
+  color: #5b86e5;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 25px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+form input[type="submit"]:hover {
+  background: #f1f1f1;
+  transform: scale(1.05);
+}
+
+/* User posts section */
+.user-posts {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.post-card {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(6px);
+  border-radius: 15px;
+  padding: 20px;
+  margin: 20px auto;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s;
+  text-align: center;
+}
+
+.post-card:hover {
+  transform: translateY(-5px);
+}
+
+/* Post title */
+.post-card h2 {
+  margin: 0 0 10px;
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: #fff;
+}
+
+/* Action buttons */
+a.post,
+a.feed-link {
+  display: inline-block;
+  text-decoration: none;
+  color: #fff;
+  padding: 8px 16px;
+  margin: 5px;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+a.post {
+  background: #764ba2;
+}
+
+a.feed-link {
+  background: #36d1dc;
+}
+
+a.post:hover,
+a.feed-link:hover {
+  transform: scale(1.05);
+  opacity: 0.9;
+}

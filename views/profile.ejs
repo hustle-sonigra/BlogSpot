@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Profile</title>
+  <link rel="stylesheet" href="/stylesheets/styleProfile.css">
+</head>
+<body>
+  <h1>Welcome <%= user.name %>, to BlogSpot</h1>
+  <p>You can create, read, and share your thoughts through blogs.</p>
+
+  <form action="/create/post" method="post">
+    <input type="submit" value="Create">
+  </form>
+
+  <div class="user-posts">
+    <% if (user.posts && user.posts.length > 0) { %>
+      <% user.posts.forEach(post => { %>
+        <div class="post-card">
+          <h2><%= post.postTittle %></h2>
+          <a class="post" href="/profile/<%= post._id %>">View</a>
+          <a class="feed-link" href="/feed">Feed</a>
+        </div>
+      <% }) %>
+    <% } else { %>
+      <p>No posts yet. Create your first one!</p>
+    <% } %>
+  </div>
+</body>
+</html>

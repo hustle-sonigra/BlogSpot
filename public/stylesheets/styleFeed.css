@@ -1,0 +1,93 @@
+/* General page setup */
+body {
+  margin: 0;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  color: #fff;
+  min-height: 100vh;
+}
+
+/* Page title */
+h1 {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 2.5rem;
+}
+
+/* Profile link */
+.profile {
+  display: inline-block;
+  text-decoration: none;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(6px);
+  transition: 0.3s;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.profile:hover {
+  background: rgba(255, 255, 255, 0.4);
+  transform: scale(1.05);
+}
+
+/* Post card styling */
+.post {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(6px);
+  border-radius: 15px;
+  padding: 20px;
+  margin: 20px auto;
+  max-width: 600px;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+}
+
+.post:hover {
+  transform: translateY(-5px);
+}
+
+/* Title text */
+.tittle p {
+  font-size: 1.4rem;
+  font-weight: bold;
+  margin: 0 0 10px;
+  color: #fff;
+}
+
+/* Blog snippet */
+.text p {
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #f0f0f0;
+  margin: 0 0 10px;
+}
+
+/* Author line */
+.author {
+  font-size: 0.9rem;
+  font-style: italic;
+  color: #ddd;
+  margin-bottom: 10px;
+}
+
+/* Read More button */
+.extend {
+  display: inline-block;
+  text-decoration: none;
+  color: #fff;
+  background: #5b86e5;
+  padding: 8px 16px;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.extend:hover {
+  background: #36d1dc;
+  transform: scale(1.05);
+}

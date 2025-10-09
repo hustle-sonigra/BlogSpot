@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blog</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 20px;
+      font-family: Arial, sans-serif;
+      background: linear-gradient(135deg, #36d1dc, #5b86e5);
+      color: #fff;
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .blog-container {
+      background: rgba(255, 255, 255, 0.1);
+      backdrop-filter: blur(6px);
+      border-radius: 15px;
+      padding: 30px;
+      max-width: 700px;
+      width: 100%;
+      box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 2rem;
+      margin-bottom: 20px;
+    }
+
+    .content {
+      font-size: 1.1rem;
+      line-height: 1.6;
+      margin-bottom: 20px;
+      color: #f0f0f0;
+      text-align: justify;
+    }
+
+    p {
+      font-style: italic;
+      margin-bottom: 20px;
+      color: #ddd;
+    }
+
+    .Edit {
+      display: inline-block;
+      text-decoration: none;
+      color: #fff;
+      background: #764ba2;
+      padding: 10px 20px;
+      border-radius: 20px;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+    .Edit:hover {
+      opacity: 0.9;
+      transform: scale(1.05);
+    }
+  </style>
+</head>
+<body>
+  <div class="blog-container">
+    <h1><%= post.postTittle %></h1>
+    <div class="content"><%= post.postData %></div>
+    <p>- by <%= post.user.name %></p>
+    <a class="Edit" href="/post/edit/<%= post._id %>">Edit</a>
+  </div>
+</body>
+</html>
